@@ -10,7 +10,6 @@ public class PrintSpooler {
     private void init() {
         System.out.println("Đang khởi tạo");
     }
-    // trả về instance duy nhất
     public static synchronized PrintSpooler getInstance() {
         if (instance == null) {
             instance = new PrintSpooler();
